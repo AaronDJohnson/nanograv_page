@@ -26,7 +26,7 @@
 				NANOGrav Tutorials
 			</h1>
 			<p class="text">
-				The tutorials here show how to search for gravitational waves in NANOGrav data. They all use <a href='https://github.com/nanograv/enterprise'>ENTERPRISE</a> and its <a href='https://github.com/nanograv/enterprise_extensions'>extensions</a> software for which installation instructions are included on the GitHub pages associated with each tutorial. Bayesian sampling is done using <a href='https://github.com/jellis18/PTMCMCSampler'>PTMCMCSampler</a>.
+				The tutorials here show how to search for the gravitational waves in NANOGrav data. They all use <a href='https://github.com/nanograv/enterprise'>ENTERPRISE</a> and its <a href='https://github.com/nanograv/enterprise_extensions'>extensions</a> software for which installation instructions are included on the GitHub page associated with each tutorial. Bayesian sampling is done using <a href='https://github.com/jellis18/PTMCMCSampler'>PTMCMCSampler</a>.
 			</p>
 		</div>
 	</div>
@@ -36,19 +36,15 @@
 				12.5 Year Stochastic Background Tutorials <a href='https://github.com/nanograv/12p5yr_stochastic_analysis'>[GitHub]</a>
 			</h2>
 			<p class="text">
-				NANOGrav searched for an isotropic stochastic gravitational-wave background in the NANOGrav 12.5-year dataset and reported its results in <a href="https://iopscience.iop.org/article/10.3847/2041-8213/abd401">The Astrophysical Journal Letters</a>. The tutorals below demonstrate the methods used in that analysis and they reproduce some key figures from the paper. All tutorials and installation instructions can be found on the 12.5 year stochastic analysis tutorials <a href='https://github.com/nanograv/12p5yr_stochastic_analysis'>GitHub</a> page.
+				NANOGrav searched for an isotropic stochastic gravitational-wave background in the NANOGrav 12.5-year dataset and reported its results in <a href="https://iopscience.iop.org/article/10.3847/2041-8213/abd401">The Astrophysical Journal Letters</a>. The tutorials below demonstrate the methods used in that analysis and they reproduce some key figures from the paper. All tutorials and installation instructions can be found on the 12.5 year stochastic analysis tutorials <a href='https://github.com/nanograv/12p5yr_stochastic_analysis'>GitHub</a> page.
 			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-1">
-		</div>
 		<div class="col-md-2">
-			<img src="figspgwb.png" class="img-thumbnail" alt="">
+			<img src="figspgwb.png" class="img-responsive" alt="">
 		</div>
-		<div class="col-md-1">
-		</div>
-		<div class="col-md-8">
+		<div class="col-md-10">
 			<h3>
 				Single Pulsar GWB Analysis <a href="https://colab.research.google.com/drive/1sBALRUi6wCykAAKH8Lp5TdS69QUmNgZq#scrollTo=t1FXF9NO5HpG">[Google Colab]</a>
 			</h3>
@@ -58,44 +54,36 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-1">
-		</div>
 		<div class="col-md-2">
-			<img src="figwn.png" class="img-thumbnail" alt="Noise Corner">
+			<img src="figwn3.png" class="img-responsive" alt="Noise Corner">
 		</div>
-		<div class="col-md-1">
-		</div>
-		<div class="col-md-8">
+		<div class="col-md-10">
 			<h3>
 				White Noise Analysis of a Single Pulsar <a href="https://colab.research.google.com/drive/11aRVepxn_whRm_JWCbgL_sVqn1hjo9Ik?usp=sharing">[Google Colab]</a>
 			</h3>
 			<p>
-				Here we go through the Bayesian analysis of white noise on a single pulsar. This is done for every pulsar in the NANOGrav data set to find the most likely values of each white noise parameter. These are then set to their most likely value in the full GWB analysis to reduce the computational time required for a full analysis.
+				Before beginning the large data analyses, we begin by analyzing the noise in each pulsar using a Bayesian framework. We run a model with white noise and intrinsic red noise to find out the most likely values for white noise parameters. By saving these values in a noise file, we may set the white noise as constant in the isotropic stochastic gravitational wave background analysis using these noisefiles. This tutorial contains a single pulsar white noise run both in long form and also using enterprise extensions to do everything in a few lines. This tutorial will take a few hours to complete due to the large time requirement to sample the posteriors.
 			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-4">
-			<img src="fig1.png" class="img-thumbnail" alt="Figure 1">
+		<div class="col-md-2">
+			<img src="fig1_2.png" class="img-responsive" alt="Figure 1">
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-10">
 			<h3>
 				PTA Stochastic Background Analysis <a href="https://colab.research.google.com/drive/1dwZ7ihDtpah9ATiPx2SJIWNYt9YJkQvF?usp=sharing">[Google Colab]</a>
 			</h3>
 			<p>
-				In this tutorial, we work through the Bayesian analysis of a subset of pulsars in the NANOGrav data set (those timed for more than 6 years). After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors. Figures 1, 2, and part of 3 of the 12.5 year stochastic background paper are reproduced in this notebook.
+				In this tutorial, we work through the Bayesian isotropic gravitational wave background analysis of a subset of pulsars in the NANOGrav data set (those timed for more than 6 years). After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors. Figures 1, 2, and part of 3 of the 12.5 year stochastic background paper are reproduced in this notebook. This tutorial will take a few hours to complete due to the large time requirement for sampling posteriors.
 			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-1">
-		</div>
 		<div class="col-md-2">
-			<img src="fig5.png" class="img-thumbnail" alt="Figure 5">
+			<img src="fig5.png" class="img-responsive" alt="Figure 5">
 		</div>
-		<div class="col-md-1">
-		</div>
-		<div class="col-md-8">
+		<div class="col-md-10">
 			<h3>
 				Optimal Statistic Analysis <a href="https://colab.research.google.com/drive/1VNLbutN7cKJM2jl6LId0IgkGJDszDloC#scrollTo=bwMNlFWuQhnB">[Google Colab]</a>
 			</h3>
