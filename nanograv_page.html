@@ -23,72 +23,90 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h1 class="text-center">
-				NANOGrav Tutorials
+				NANOGrav Data Analysis Tutorials
 			</h1>
-			<p class="text">
-				The tutorials here show how to search for the gravitational waves in NANOGrav data. They all use <a href='https://github.com/nanograv/enterprise'>ENTERPRISE</a> and its <a href='https://github.com/nanograv/enterprise_extensions'>extensions</a> software for which installation instructions are included on the GitHub page associated with each tutorial. Bayesian sampling is done using <a href='https://github.com/jellis18/PTMCMCSampler'>PTMCMCSampler</a>.
+			<p class="text-center">
+			    NANOGrav Software: <a href='https://github.com/nanograv/enterprise'>ENTERPRISE</a>, <a href='https://github.com/nanograv/enterprise_extensions'>ENTERPRISE extensions</a>, <a href='https://github.com/jellis18/PTMCMCSampler'>PTMCMCSampler</a>
 			</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<h2>
-				12.5 Year Stochastic Background Tutorials <a href='https://github.com/nanograv/12p5yr_stochastic_analysis'>[GitHub]</a>
+				12.5 Year Stochastic Gravitational-wave Background Tutorials <a href='https://github.com/nanograv/12p5yr_stochastic_analysis'>[GitHub]</a> <a href="https://iopscience.iop.org/article/10.3847/2041-8213/abd401">[ApJL]</a> <a href="https://arxiv.org/abs/2009.04496">[arXiv]</a>
 			</h2>
-			<p class="text">
-				NANOGrav searched for an isotropic stochastic gravitational-wave background in the NANOGrav 12.5-year dataset and reported its results in <a href="https://iopscience.iop.org/article/10.3847/2041-8213/abd401">The Astrophysical Journal Letters</a>. The tutorials below demonstrate the methods used in that analysis and they reproduce some key figures from the paper. All tutorials and installation instructions can be found on the 12.5 year stochastic analysis tutorials <a href='https://github.com/nanograv/12p5yr_stochastic_analysis'>GitHub</a> page.
-			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-4">
 			<img src="figspgwb.png" class="img-responsive" alt="">
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-8">
 			<h3>
-				Single Pulsar GWB Analysis <a href="https://colab.research.google.com/drive/1sBALRUi6wCykAAKH8Lp5TdS69QUmNgZq#scrollTo=t1FXF9NO5HpG">[Google Colab]</a>
+				Single Pulsar Stochastic Background Analysis <a href="https://colab.research.google.com/drive/1sBALRUi6wCykAAKH8Lp5TdS69QUmNgZq#scrollTo=t1FXF9NO5HpG">[Google Colab]</a>
 			</h3>
 			<p>
-				This tutorial is meant to be a quick introduction for those who don't have time to run the computations required in the full pulsar timing array (PTA) gravitational wave background (GWB) analysis. We go through the Bayesian analysis of J1909 and J1713. These are two of the longest timed pulsars in the NANOGrav data set. One of the pulsars supports the GWB, while the other does not.
+				<b>Description:</b> Bayesian analysis of a single pulsar
+				<br>
+				<b>Goal:</b> Learn to use ENTERPRISE and ENTERPRISE extensions with PTMCMCSampler
+				<br>
+				<b>Time Required:</b> Short
 			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-4">
 			<img src="figwn3.png" class="img-responsive" alt="Noise Corner">
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-8">
 			<h3>
 				White Noise Analysis of a Single Pulsar <a href="https://colab.research.google.com/drive/11aRVepxn_whRm_JWCbgL_sVqn1hjo9Ik?usp=sharing">[Google Colab]</a>
 			</h3>
 			<p>
-				Before beginning the large data analyses, we begin by analyzing the noise in each pulsar using a Bayesian framework. We run a model with white noise and intrinsic red noise to find out the most likely values for white noise parameters. By saving these values in a noise file, we may set the white noise as constant in the isotropic stochastic gravitational wave background analysis using these noisefiles. This tutorial contains a single pulsar white noise run both in long form and also using enterprise extensions to do everything in a few lines. This tutorial will take a few hours to complete due to the large time requirement to sample the posteriors.
+				<b>Description:</b> Bayesian white noise analysis of a single pulsar
+				<br>
+				<b>Goal:</b> Generate noise parameters used in full PTA analysis
+				<br>
+				<b>Time Required:</b> Long
 			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-4">
 			<img src="fig1_2.png" class="img-responsive" alt="Figure 1">
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-8">
 			<h3>
-				PTA Stochastic Background Analysis <a href="https://colab.research.google.com/drive/1dwZ7ihDtpah9ATiPx2SJIWNYt9YJkQvF?usp=sharing">[Google Colab]</a>
+				Pulsar Timing Array Stochastic Background Analysis <a href="https://colab.research.google.com/drive/1dwZ7ihDtpah9ATiPx2SJIWNYt9YJkQvF?usp=sharing">[Google Colab]</a>
 			</h3>
 			<p>
-				In this tutorial, we work through the Bayesian isotropic gravitational wave background analysis of a subset of pulsars in the NANOGrav data set (those timed for more than 6 years). After going through a generalized process of the single pulsar GWB analysis, we show how to compare models and compute Bayes factors. Figures 1, 2, and part of 3 of the 12.5 year stochastic background paper are reproduced in this notebook. This tutorial will take a few hours to complete due to the large time requirement for sampling posteriors.
+				<b>Description:</b> Bayesian pulsar timing array analysis demonstrating both parameter estimation and Bayes factor calculations
+				<br>
+				<b>Goal:</b> Generate noise parameters used in full PTA analysis
+				<br>
+				<b>Time Required:</b> Long
+				<br>
+				<b>Figures Reproduced:</b> 1, 2, part of 3
 			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-4">
 			<img src="fig5.png" class="img-responsive" alt="Figure 5">
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-8">
 			<h3>
 				Optimal Statistic Analysis <a href="https://colab.research.google.com/drive/1VNLbutN7cKJM2jl6LId0IgkGJDszDloC#scrollTo=bwMNlFWuQhnB">[Google Colab]</a>
 			</h3>
 			<p>
-				This tutorial gives an introduction to frequentist methods we can use to look for the stochastic gravitational-wave background. It calculates the optimal statistic using the maximum likelihood noise parameters and also the noise marginalized optimal statistic using the noise parameter posteriors from a Bayesian analysis. It reproduces Figure 4 and 5 of the paper.
+				<br>
+				<b>Description:</b> Frequentist analysis using the (noise marginalized) optimal statistic calculated using the posteriors from a Bayesian analysis.
+				<br>
+				<b>Goal:</b> Learn to use ENTERPRISE and ENTERPRISE extensions to compute the optimal statistic
+				<br>
+				<b>Time Required:</b> Short
+				<br>
+				<b>Figures Reproduced:</b> 4 and 5
 			</p>
 		</div>
 	</div>
